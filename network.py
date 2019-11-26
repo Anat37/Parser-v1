@@ -25,7 +25,8 @@ import time
 import pickle as pkl
 
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 from lib import models
 from lib import optimizers
